@@ -8,8 +8,6 @@ int main(){
 	char ch(' ');
 	char command[20];
 	do{
-
-
 		do ch = getchar(); while(ch == ' ' || ch == '\n' || ch == '\t');
 		if(ch == EOF) return 0;
 		else ungetc(ch, stdin);
