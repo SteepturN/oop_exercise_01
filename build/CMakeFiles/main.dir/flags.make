@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -Wall -pedantic
+CXX_FLAGS =  -Wall -pedantic -g
 

@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -pedantic -rdynamic CMakeFiles/main.dir/main.cpp.o -o main 
+/usr/bin/c++  -Wall -pedantic -g -rdynamic CMakeFiles/main.dir/main.cpp.o -o main 

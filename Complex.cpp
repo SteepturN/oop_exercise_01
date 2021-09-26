@@ -1,5 +1,7 @@
 //var 1
 #include <iostream>
+#include <cstring>
+
 class Complex{
 	public:
 	Complex(double a, double b)
@@ -30,5 +32,20 @@ class Complex{
         }
 	void print(){
 		std::cout << '(' << a << ',' << b << ')' << std::endl;
+	}
+	Complex exec(const char* command, Complex c) {
+		Complex answ(0, 0);
+		if(strcmp(command,"a")==0){
+			answ = this->add(Complex(c.a, c.b));
+		} else if(strcmp(command,"s")==0){
+			answ = this->sub(Complex(c.a, c.b));
+		} else if(strcmp(command,"m")==0){
+			answ = this->mul(Complex(c.a, c.b));
+		} else if(strcmp(command,"d")==0){
+			answ = this->div(Complex(c.a, c.b));
+		} else if(strcmp(command,"c")==0){
+			answ = this->conj();
+		}
+		return answ;
 	}
 };

@@ -9,6 +9,8 @@
 /home/steep/educat/instit/oop/LR1/Complex.cpp
 iostream
 -
+cstring
+-
 
 /home/steep/educat/instit/oop/LR1/main.cpp
 iostream
@@ -18,5 +20,7 @@ cstring
 Complex.cpp
 /home/steep/educat/instit/oop/LR1/Complex.cpp
 cstdio
+-
+set
 -
 
