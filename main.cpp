@@ -3,6 +3,7 @@
 #include "Complex.cpp"
 #include <cstdio>
 int main(){
+
 	double re1(0), im1(0), re2(0), im2(0);
 	char ch(' ');
 	char command[20];
