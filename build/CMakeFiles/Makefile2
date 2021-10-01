@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = /home/steep/educat/instit/oop/LR1/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/oop_exercise_01.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/oop_exercise_01.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/oop_exercise_01.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/steep/educat/instit/oop/LR1/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/oop_exercise_01.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_01.dir/build.make CMakeFiles/oop_exercise_01.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_01.dir/build.make CMakeFiles/oop_exercise_01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/steep/educat/instit/oop/LR1/build/CMakeFiles --progress-num=1,2 "Built target oop_exercise_01"
+.PHONY : CMakeFiles/oop_exercise_01.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+CMakeFiles/oop_exercise_01.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/steep/educat/instit/oop/LR1/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/oop_exercise_01.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/steep/educat/instit/oop/LR1/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/oop_exercise_01.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+oop_exercise_01: CMakeFiles/oop_exercise_01.dir/rule
 
-.PHONY : main
+.PHONY : oop_exercise_01
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/oop_exercise_01.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_01.dir/build.make CMakeFiles/oop_exercise_01.dir/clean
+.PHONY : CMakeFiles/oop_exercise_01.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
