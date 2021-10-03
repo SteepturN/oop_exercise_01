@@ -14,10 +14,18 @@
 #include "Complex.cpp"
 #include <cstdio>
 int main(){
-
+	char a[] = "You can use\n\
+--add: a (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--subtraction: s (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--conjuction: c (real part of num) (imagin part of num)\n\
+--multiply: m (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--division: d (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--equivalent: e (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--if num1 bigger than num2: bth (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n";
 	double re1(0), im1(0), re2(0), im2(0);
 	char ch(' ');
 	char command[20];
+	std::cout << a;
 	do{
 		do ch = getchar(); while(ch == ' ' || ch == '\n' || ch == '\t');
 		if(ch == EOF) return 0;
