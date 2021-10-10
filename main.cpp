@@ -29,11 +29,10 @@ int main(){
 	Complex c1(0,0), c2(0,0);
 	char ch(' ');
 	char command[20] = {0};
-	bool exit;
 	std::set<std::string> valid_commands = {"c", "a", "s", "m", "d", "e", "bth", "exit"};
 	std::cout << a;
 	do {
-		exit = false;
+		bool exit = false;
 		do{
 			read_return_t answer = get_command(valid_commands, command);
 			switch(answer) {
