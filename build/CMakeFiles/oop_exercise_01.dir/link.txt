@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -pedantic -rdynamic CMakeFiles/oop_exercise_01.dir/main.cpp.o -o oop_exercise_01 
