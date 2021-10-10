@@ -27,7 +27,8 @@ read_return_t get_command(std::set<std::string>& valid_commands, char* command)
 	else return INVALID_INPUT;
 }
 
-read_return_t get_double(double& d)
+template <typename T>
+read_return_t get_value(T& d)
 {
 	char ch(' ');
 	while((ch == '\t') || (ch == ' ')) {

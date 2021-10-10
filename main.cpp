@@ -27,14 +27,14 @@ int main(){
 				}
 		} while(!exit);
 		if(static_cast<std::string>(command) == "exit") return 0;
-		if((get_double(c1.a) != VALID_INPUT) || (get_double(c1.b) != VALID_INPUT)) {
+		if((get_value<double>(c1.a) != VALID_INPUT) || (get_value<double>(c1.b) != VALID_INPUT)) {
 			do ch = getchar(); while((ch != EOF) && (ch != '\n'));
 			std::cout << "wrong input" << std::endl;
 			if(ch == EOF) return 0;
 			continue;
 		}
 		if(static_cast<std::string>(command) != "c") {
-			if((get_double(c2.a) != VALID_INPUT) || (get_double(c2.b) != VALID_INPUT)) {
+			if((get_value<double>(c2.a) != VALID_INPUT) || (get_value<double>(c2.b) != VALID_INPUT)) {
 				do ch=getchar(); while((ch != EOF) && (ch != '\n'));
 				std::cout << "wrong input" << std::endl;
 				if(ch == EOF) return 0;
