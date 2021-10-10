@@ -31,7 +31,7 @@ class Complex{
 		return (a*a+b*b) > (c.a*c.a+c.b*c.b);
         }
 	void print(){
-		std::cout << '(' << a << ',' << b << ')' << std::endl;
+		std::cout << '(' << a << ", " << b << ')';
 	}
 	Complex exec(const char* command, Complex c) {
 		Complex answ(0, 0);

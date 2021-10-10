@@ -1,3 +1,14 @@
+/*
+Бутырев М8О-206Б-20
+Комплексное число в алгебраической форме представляются парой действительных чисел (a, b), где a – действительная часть, b – мнимая часть. Реализовать класс Complex для работы с комплексными числами. Обязательно должны быть присутствовать операции
+-         сложения add, (a, b) + (c, d) = (a + c, b + d);
+-         вычитания sub, (a, b) – (c, d) = (a – c, b – d);
+-         умножения mul, (a, b) ´ (c, d) = (ac – bd, ad + bc);
+-         деления div, (a, b) / (c, d) = (ac + bd, bc – ad) / (c2 + d2);
+-         сравнение equ, (a, b) = (c, d), если (a = c) и (b = d);
+-         сопряженное число conj, conj(a, b) = (a, –b).
+Реализовать операции сравнения модулей.
+*/
 #include <iostream>
 #include <string>
 #include "Complex.cpp"
@@ -6,11 +17,21 @@
 #include "Read_input.cpp"
 
 int main(){
+	char a[] = "You can use\n\
+--add: a (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--subtraction: s (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--conjuction: c (real part of num) (imagin part of num)\n\
+--multiply: m (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--division: d (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--equivalent: e (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--if num1 bigger than num2: bth (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--exit\n";
 	Complex c1(0,0), c2(0,0);
 	char ch(' ');
 	char command[20] = {0};
 	bool exit;
 	std::set<std::string> valid_commands = {"c", "a", "s", "m", "d", "e", "bth", "exit"};
+	std::cout << a;
 	do {
 		exit = false;
 		do{
@@ -41,6 +62,15 @@ int main(){
 				continue;
 			}
 		}
+
+		c1.print();
+		std::cout << '\t' << command << '\t';
+		if(static_cast<std::string>(command) != "c") {
+			c2.print();
+			std::cout << '\t';
+		}
+		std::cout << '\t' << '=' << '\t';
+
 		if(static_cast<std::string>(command) == "c") {
 			c1.conj().print();
 		} else if (static_cast<std::string>(command) == "bth") {
@@ -50,6 +80,7 @@ int main(){
 		} else {
 			c1.exec(command, c2).print();
 		}
+		std::cout << std::endl;
 	} while(true);
 	return 0;
 }
