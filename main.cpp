@@ -18,13 +18,13 @@
 
 int main(){
 	char a[] = "You can use\n\
---add: a (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
---subtraction: s (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
---conjuction: c (real part of num) (imagin part of num)\n\
---multiply: m (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
---division: d (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
---equivalent: e (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
---if num1 bigger than num2: bth (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--add:\t a (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--subtraction:\t s (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--conjuction:\t c (real part of num) (imagin part of num)\n\
+--multiply:\t m (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--division:\t d (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--equivalent:\t e (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
+--if num1 bigger than num2:\t bth (real part of num1) (imagin part of num1) (real part of num2) (imagin part of num2)\n\
 --exit\n";
 	Complex c1(0,0), c2(0,0);
 	char ch(' ');
